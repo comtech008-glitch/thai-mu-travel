@@ -1,0 +1,25 @@
+*{box-sizing:border-box}
+:root{--gold:#d7a84b;--deep:#30204d;--purple:#65457e;--cream:#fffaf0;--ink:#30283a;--muted:#766d7d}
+body{margin:0;font-family:Tahoma,"Noto Sans Thai",sans-serif;color:var(--ink);background:#fbf8f3;line-height:1.75}
+header{color:white;background:linear-gradient(120deg,#27183e,#65457e);padding:18px 6%;border-bottom:4px solid var(--gold)}
+.brand{font-size:1.45rem;font-weight:bold}.brand span{color:#f2cf82}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+nav a{color:white;text-decoration:none;padding:7px 13px;border:1px solid #ffffff45;border-radius:20px;font-size:.95rem}
+nav a:hover,nav a.active{background:var(--gold);color:#2d2040}
+.hero{padding:76px 7%;color:white;text-align:center;background:radial-gradient(circle at 15% 20%,#9875a8 0,transparent 28%),linear-gradient(130deg,#33204e,#76518b 60%,#b38b62)}
+.hero h1{font-size:clamp(2rem,5vw,3.3rem);margin:0 0 12px}.hero p{max-width:760px;margin:auto;font-size:1.08rem}
+.container{width:min(1100px,90%);margin:38px auto 60px}
+.section-title{color:var(--deep);margin-bottom:8px;font-size:1.65rem}.intro{color:var(--muted);margin-top:0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin-top:24px}
+.card{background:white;border-radius:16px;overflow:hidden;box-shadow:0 5px 18px #2d204012;border:1px solid #eee5d7}
+.card-art{min-height:155px;display:grid;place-items:center;color:white;font-size:3.8rem;background:linear-gradient(135deg,#6c4b86,#d3a65c)}
+.card:nth-child(2n) .card-art{background:linear-gradient(135deg,#a66a54,#e2bc75)}
+.card:nth-child(3n) .card-art{background:linear-gradient(135deg,#426d69,#b9a36d)}
+.card-body{padding:18px}.card h3{margin:0 0 7px;color:var(--deep)}.card p{margin:0 0 10px;color:var(--muted)}
+.pill{display:inline-block;font-size:.82rem;color:#674a20;background:#f8edcf;padding:3px 10px;border-radius:20px}
+.info{margin-top:30px;padding:22px 24px;border-left:5px solid var(--gold);background:#fff4d9;border-radius:10px}
+.info h3{margin-top:0;color:var(--deep)}
+.button{display:inline-block;margin-top:12px;padding:9px 18px;border-radius:22px;background:var(--deep);color:white;text-decoration:none}
+.button:hover{background:#805b9d}
+footer{background:#27183e;color:#eee5f5;text-align:center;padding:22px 6%}footer small{color:#d8c9e2}
+@media(max-width:600px){header{padding:16px 5%}nav{gap:6px}nav a{font-size:.85rem;padding:6px 10px}.hero{padding:55px 6%}.container{width:92%;margin-top:28px}}
